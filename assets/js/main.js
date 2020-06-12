@@ -10,12 +10,5 @@ $(window).scroll(function() {
   });
 });
 
-//code for pop-up chat
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
 
