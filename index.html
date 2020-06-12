@@ -11,7 +11,16 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_Rec1zOlQl0yQ2z6r7mDwx");
+       emailjs.send("gmail", "rosie", {
+                name: "jaya",
+                notes: "The project that I want is..."
+            })
+   })();
+</script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -208,6 +217,7 @@
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
+        <form onsubmit="return sendMail(this);">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
@@ -221,6 +231,7 @@
           <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
       </div>
+      </form>
     </div>
   </div>
 </div>
@@ -240,6 +251,6 @@
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3E-VCJuseWNGJ7pHHy9ziYh4C2z_8pZc&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
  <script src="assets/js/main.js"></script>
-
+ <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
