@@ -37,24 +37,95 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">HOME</a></li>
-        <li><a href="about-us">ABOUT US</a></li>
-        <li><a href="listing">lISTING</a></li>
-        <li><a href="services">SERVICES</a></li>
-        <li><a href="contact-us">CONTACT US</a></li>
-		     <li><a href="register" class="active">REGISTER / LOGIN</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="listing.html">lISTING</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+		     <li><a href="register.html" class="active">REGISTER / LOGIN</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-	
- 
-	
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
 
 
 
-	<!-- Container (Properties Section) -->
-  <!-- MAIN (Center website) -->
+<!-- MAIN (Center website) -->
 <div class="main">
 
 <h1>HOT PROPERTIES</h1>
@@ -64,170 +135,67 @@
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')">Apartments</button>
-  <button class="btn" onclick="filterSelection('cars')">Condo townhouse</button>
-  <button class="btn" onclick="filterSelection('people')">Houses</button>
+  <button class="btn" onclick="filterSelection('house')">House</button>
+  <button class="btn" onclick="filterSelection('condo')">Condo</button>
+  <button class="btn" onclick="filterSelection('townhouse')">Townhouse</button>
 </div>
 
-<div class="container-fluid text-center">
-  
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-         <img src="assets/images/properties3.jpg" alt="properties3" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-         <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    </div>
-	</div>
-
-  <div class="container-fluid text-center bg-grey slideanim">
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-         <img src="assets/images/properties3.jpg" alt="properties3" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-         <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    </div>
-	</div>
-
-  <div class="container-fluid text-center">
-  
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-         <img src="assets/images/properties3.jpg" alt="properties3" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-         <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    </div>
-	</div>
-
-  <div class="container-fluid text-center bg-grey slideanim">
-  
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-         <img src="assets/images/properties3.jpg" alt="properties3" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-         <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
-        <p>$509,900</p>
-       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
-        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
-      </div>
-    </div>
-    </div>
-	</div>
-</div>
-	
-  <!-- Container (Contact Section) -->
-<div id="contact" class="container">
-  <h2 class="text-center">CONTACT US</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Boston MA</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1212121212</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> dreamhome.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <form onsubmit="return sendMail(this);">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-      </form>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column house">
+    <div class="content">
+      <img src="assets/images/properties2.jpg" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
     </div>
   </div>
+  <div class="column house">
+    <div class="content">
+    <img src="assets/images/properties3.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column house">
+    <div class="content">
+    <img src="assets/images/properties3.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  
+  <div class="column condo">
+    <div class="content">
+      <img src="assets/images/properties3.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column condo">
+    <div class="content">
+    <img src="assets/images/properties2.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column condo">
+    <div class="content">
+    <img src="assets/images/properties2.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  
+  
+  
+  
+<!-- END GRID -->
 </div>
 
-<!-- Container (footer section) -->
+<!-- END MAIN -->
+</div>
 
-<footer class="container-fluid text-center ">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  
-</footer>
 <script>
 filterSelection("all")
 function filterSelection(c) {
@@ -264,8 +232,7 @@ function w3RemoveClass(element, name) {
 
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
-var
- btns = btnContainer.getElementsByClassName("btn");
+var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
@@ -274,6 +241,22 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+
+
+
+ 
+	
+
+
+
+	
+
+
+
+
+
+ 
+
 
 
 
