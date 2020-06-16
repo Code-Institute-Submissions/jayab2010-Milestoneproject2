@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>properties</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="listing.html">LISTING</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+		<li><a href="#">REGISTER/LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>About Us</h2><br>
+      <h4>Welcomes to DreamHOME Real Estate Agent In Mississauga,Brampton, Ontario</h4><br>
+      <p>Being a trusted real estate agent in Mississauga, Brampton, Ontario, I guarantee to provide effective, top-notch and reliable real estate property buying and selling the solution.<span id="dots">...</span><span id="more">  I prefer to maintain a transparent relationship with my clients and make sure that all their questions are answered. It is obvious that the clients I deal with have a very fair idea about the real estate property, be it for buying or selling; therefore, I personally sit with them and help them understand everything in details.It is not only about buying a new property but even if you are planning to sell your existing property, you can contact me. I can assure the maximum selling price of the property.</p>
+		<p>With the widespread network, I can help you buy any property that you wish for. Be it a commercial or a domestic property, you can completely rely on me for the best options. Considering the locations like availability of Supermarket, Public Transit, School, Hospitals nearby and many more.</p>
+    </span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-6">
+     <div class="d-none">
+        <img src="assets/images/partner1.jpg" height="500" width="500">
+          </div>
+    </div>
+  </div>
+</div>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+	
+</body>
+</html>

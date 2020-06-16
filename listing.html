@@ -54,8 +54,8 @@
 
 body {
   background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
+
+ 
 }
 
 /* Center website */
@@ -64,10 +64,7 @@ body {
   margin: auto;
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
+
 
 .row {
   margin: 10px -16px;
@@ -81,7 +78,7 @@ h1 {
 
 /* Create three equal columns that floats next to each other */
 .column {
-  float: left;
+  
   width: 33.33%;
   display: none; /* Hide all elements by default */
 }
@@ -127,58 +124,58 @@ h1 {
 
 <!-- MAIN (Center website) -->
 <div class="main">
-
 <h1>HOT PROPERTIES</h1>
 <hr>
-
 <h2>MISSISSAUGA</h2>
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('house')">House</button>
+  <button class="btn" onclick="filterSelection('houses')">House</button>
   <button class="btn" onclick="filterSelection('condo')">Condo</button>
   <button class="btn" onclick="filterSelection('townhouse')">Townhouse</button>
 </div>
 
 <!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column house">
+<div class="container-fluid text-center">
+
+  <div class="column townhouse">
     <div class="content">
       <img src="assets/images/properties2.jpg" alt="Mountains" style="width:100%">
       <h4>Mountains</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column house">
+  <div class="column houses">
     <div class="content">
     <img src="assets/images/properties3.jpg" alt="Lights" style="width:100%">
       <h4>Lights</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column house">
+  <div class="column houses">
     <div class="content">
     <img src="assets/images/properties3.jpg" alt="Nature" style="width:100%">
       <h4>Forest</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
+
   
-  <div class="column condo">
+  <div class="column condo col-sm-4">
     <div class="content">
       <img src="assets/images/properties3.jpg" alt="Car" style="width:100%">
       <h4>Retro</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column condo">
+  <div class="column condo col-sm-4">
     <div class="content">
     <img src="assets/images/properties2.jpg" alt="Car" style="width:100%">
       <h4>Fast</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column condo">
+  <div class="column condo col-sm-4">
     <div class="content">
     <img src="assets/images/properties2.jpg" alt="Car" style="width:100%">
       <h4>Classic</h4>
@@ -264,6 +261,6 @@ for (var i = 0; i < btns.length; i++) {
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3E-VCJuseWNGJ7pHHy9ziYh4C2z_8pZc&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
  <script src="assets/js/main.js"></script>
- <script src="assets/js/sendEmail.js"></script>
+ 
 </body>
 </html>
