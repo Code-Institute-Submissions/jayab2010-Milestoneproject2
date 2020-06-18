@@ -10,6 +10,43 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
  </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -44,15 +81,71 @@
       <p>Being a trusted real estate agent in Mississauga, Brampton, Ontario, I guarantee to provide effective, top-notch and reliable real estate property buying and selling the solution.<span id="dots">...</span><span id="more">  I prefer to maintain a transparent relationship with my clients and make sure that all their questions are answered. It is obvious that the clients I deal with have a very fair idea about the real estate property, be it for buying or selling; therefore, I personally sit with them and help them understand everything in details.It is not only about buying a new property but even if you are planning to sell your existing property, you can contact me. I can assure the maximum selling price of the property.</p>
 		<p>With the widespread network, I can help you buy any property that you wish for. Be it a commercial or a domestic property, you can completely rely on me for the best options. Considering the locations like availability of Supermarket, Public Transit, School, Hospitals nearby and many more.</p>
     </span></p>
-<button onclick="myFunction()" id="myBtn">Read more</button>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+
+      <br><button onclick="myFunction()" id="myBtn" class="btn btn-default btn-lg">Read more</button>
     </div>
     <div class="col-sm-6">
      <div class="d-none">
-        <img src="assets/images/partner1.jpg" height="500" width="500">
+        <img src="assets/images/partner1.jpg" height="400" width="400">
           </div>
     </div>
   </div>
+</div>
+<div id="about" class="container-fluid center">
+  <div class="row">
+<div class="col-12 col-md-6 col-lg-4 center">
+ 
+  <h2>FAQ</h2>
+<button class="collapsible">As a first time home buyer, what do i need to know before signing an offer to purchase?</button>
+<div class="content">
+  <p>You should obtain adequate information about the property you get into buying or sign any offers to purchase. This information should include but not limited to:
+
+Checking the amount of the annual property taxes and also finding out if there are any arrears in terms of taxes
+Finding out if there are any restrictions on the title to the property
+Equally important is checking with your bank and making sure that you are eligible for the mortgage financing amount that you will need</p>
+</div>
+<button class="collapsible">Can I put condition on purchase? </button>
+<div class="content">
+  <p>Yes, you may put conditions in the offer to purchase. Some of the common conditions include:
+
+Obtaining required financing from your financial institute
+Selling the house you are currently living in, if you own it
+Obtaining a favourable report from building inspection personnel
+Obtaining approval of your lawyer of the terms outlined in the offer</p>
+</div>
+<button class="collapsible">what is a mortgage?</button>
+<div class="content">
+  <p>A mortgage is a charge on land created for securing a debt or loan. In other words, a bank or mortgage company lends you the money to buy your home and in turn you sign documents which are registered on the title to your home promising to repay them. If you default on your mortgage, the home will be repossessed to repay the loan, through a legal procedure called foreclosure.
+
+</p>
+</div>
+<button class="collapsible">How do I go about getting a morgage?</button>
+<div class="content">
+  <p>Mortgage companies, banks, trust companies lend money in the form of mortgages. It is a good idea to start with your bank, as they will already be familiar with your credit rating and financial situation. However, do shop around for the best deal as it will offer options in terms of interest rates, payment options flexibility, and so on. At times, if you obtain a better deal elsewhere, your bank may be willing to match it.
+You can also get a mortgage privately, from your parents for example, or anyone who is willing to lend money on the basis of a mortgage arrangement.
+
+</p>
+</div>
+</div>
+  </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </div>
 <script>
 function myFunction() {
