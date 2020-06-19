@@ -12,15 +12,44 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_Rec1zOlQl0yQ2z6r7mDwx");
-       emailjs.send("gmail", "rosie", {
-                name: "jaya",
-                notes: "The project that I want is..."
-            })
-   })();
-</script>
+<style>
+.filterDiv {
+  
+  color: black;
+ text-align: center;
+   display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 20px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+
+
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -46,203 +75,181 @@
     </div>
   </div>
 </nav>
-
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-
- 
-}
-
-/* Center website */
-.main {
-  
-  margin: auto;
-}
-
-
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-</style>
-
-
-
-<!-- MAIN (Center website) -->
-<div class="main">
-<h1>HOT PROPERTIES</h1>
-<hr>
-<h2>MISSISSAUGA</h2>
+<h2>HOT PROPERTIES IN MISSISSAUga</h2>
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('houses')">House</button>
-  <button class="btn" onclick="filterSelection('condo')">Condo</button>
-  <button class="btn" onclick="filterSelection('townhouse')">Townhouse</button>
+  <button class="btn" onclick="filterSelection('condo')"> Condo</button>
+  <button class="btn" onclick="filterSelection('townhouse')"> Townhouse</button>
+  <button class="btn" onclick="filterSelection('house')"> House</button>
+  
 </div>
 
-<!-- Portfolio Gallery Grid -->
-<div class="container-fluid text-center">
 
-  <div class="column townhouse col-sm-4 ">
-    <div class="content">
-      <img src="assets/images/properties2.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column houses col-sm-4">
-    <div class="content">
-    <img src="assets/images/properties3.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column houses  col-sm-4">
-    <div class="content">
-    <img src="assets/images/properties3.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
 
-  
-  <div class="column condo col-sm-4">
-    <div class="content">
-      <img src="assets/images/properties3.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
+<!-- Container (Properties Section) -->
+<div class="container-fluid text-center bg-grey">
+  <div class="row text-center">
+    <div class="col-sm-4 filterDiv condo">
+      <div class="thumbnail">
+        <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
     </div>
-  </div>
-  <div class="column condo col-sm-4">
-    <div class="content">
-    <img src="assets/images/properties2.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
+    <div class="col-sm-4 filterDiv condo">
+      <div class="thumbnail">
+         <img src="assets/images/properties3.jpg" alt="properties3" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
     </div>
-  </div>
-  <div class="column condo col-sm-4">
-    <div class="content">
-    <img src="assets/images/properties2.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
+    <div class="col-sm-4 filterDiv house">
+      <div class="thumbnail">
+         <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
     </div>
-  </div>
+    </div>
+	</div>
 
-  
-  
-  
-  
-<!-- END GRID -->
-</div>
-
-<!-- END MAIN -->
-</div>
-
+<div class="container-fluid text-center bg-grey">
+  <div class="row text-center">
+    <div class="col-sm-4 filterDiv house">
+      <div class="thumbnail">
+        <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail filterDiv townhouse">
+         <img src="assets/images/properties3.jpg" alt="properties3" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
+    </div>
+    <div class="col-sm-4 filterDiv townhouse">
+      <div class="thumbnail">
+         <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
+    </div>
+    </div>
+	</div>
+  <div class="container-fluid text-center bg-grey">
+  <div class="row text-center">
+    <div class="col-sm-4 filterDiv house">
+      <div class="thumbnail">
+        <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail filterDiv condo">
+         <img src="assets/images/properties3.jpg" alt="properties3" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
+    </div>
+    <div class="col-sm-4 filterDiv townhouse">
+      <div class="thumbnail">
+         <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
+    </div>
+    </div>
+	</div>
+  <div class="container-fluid text-center bg-grey">
+  <div class="row text-center">
+    <div class="col-sm-4 filterDiv condo">
+      <div class="thumbnail">
+        <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail filterDiv townhouse">
+         <img src="assets/images/properties3.jpg" alt="properties3" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
+    </div>
+    <div class="col-sm-4 filterDiv condo">
+      <div class="thumbnail">
+         <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="200">
+        <p>$509,900</p>
+       <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old<p>
+        <p>1510-3985 Grand Park Drive, Mississauga, ON • City Centre</p>
+      </div>
+    </div>
+    </div>
+	</div>
 <script>
-filterSelection("all")
+	filterSelection("all")
 function filterSelection(c) {
   var x, i;
-  x = document.getElementsByClassName("column");
+  x = document.getElementsByClassName("filterDiv");
   if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
 
+// Show filtered elements
 function w3AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
   }
 }
 
+// Hide elements that are not selected
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
 }
 
-
-// Add active class to the current button (highlight it)
+// Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
+  btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
 }
 </script>
-
-
-
- 
-	
 
 
 
