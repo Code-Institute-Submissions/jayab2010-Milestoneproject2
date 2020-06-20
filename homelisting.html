@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+  <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
  </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -69,6 +69,23 @@ This house/single family home located at 104 Kensington Avenue S, Hamilton is cu
     <div class="col-4 bg-success">.col-4</div>
   </div>
 </div>
+</* walk score api */
+<script>
+  var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://walk-score.p.rapidapi.com/score?transit=transit%253D1&lon=43604830&lat=-79.693335&address=982%20ledbury%20cr%20mississauga&wsapikey=d15135f03020da084c71800a469b7e9b",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "walk-score.p.rapidapi.com",
+		"x-rapidapi-key": "95398b2175mshd029e59dd548d14p1edd07jsn1d7fb5155400"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+</script>
 	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3E-VCJuseWNGJ7pHHy9ziYh4C2z_8pZc&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
