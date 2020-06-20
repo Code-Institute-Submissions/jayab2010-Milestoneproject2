@@ -58,7 +58,7 @@ a:hover {}
 .headline--results { font-size: 1.25rem;}
 
 /* buttons */
-.btn, .btn:visited, .btn:active { text-decoration: none; display: inline-block; padding: 10px 20px; text-align: center; line-height: normal; background-color: green; color: #fff; }
+.btn, .btn:visited, .btn:active { text-decoration: none; display: inline-block; padding: 10px 20px; text-align: center; line-height: normal; background-color: black; color: #fff; }
 .btn:hover { text-decoration: underline; }
 
 /* Result Section */

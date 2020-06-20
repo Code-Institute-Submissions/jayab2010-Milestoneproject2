@@ -10,44 +10,7 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
   
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-</style>
  </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -92,12 +55,18 @@
     </div>
   </div>
 </div>
-<div class="container-fluid center">
+
+<div class="container-fluid">
   <div class="row">
-<div class="col-12 col-md-6 col-lg-4 center">
- 
-  <h2 class="center">FAQ</h2>
-<button class="collapsible">As a first time home buyer, what do i need to know before signing an offer to purchase?</button>
+    <div class="col-12 page-header">
+      <h2 class="text-uppercase"> FAQ </h2>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+<div class="col-12 col-md-6 col-lg-4 page-header bg-grey">
+ <button class="collapsible">As a first time home buyer, what do i need to know before signing an offer to purchase?</button>
 <div class="content">
   <p>You should obtain adequate information about the property you get into buying or sign any offers to purchase. This information should include but not limited to:
 
@@ -129,7 +98,7 @@ You can also get a mortgage privately, from your parents for example, or anyone 
 </div>
 </div>
   </div>
-
+</div>
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -147,7 +116,7 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
-</div>
+
 <script>
 function myFunction() {
   var dots = document.getElementById("dots");
