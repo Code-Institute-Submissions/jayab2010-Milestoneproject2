@@ -11,7 +11,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+  
  </head>
+ 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -35,57 +37,43 @@
     </div>
   </div>
 </nav>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-8 bg-warning">
-      <p>Renovated, move-in ready home located in prime Delta West location. Walking distance to Gage Park, Schools, Ottawa St Shopping District, Restaurants, Coffee Shops, Escarpment Trails, and Transit. Quick drive to the Red Hill Valley Parkway and QEW. The main floor of this welcoming home features a light-filled open-concept living and dining room, renovated kitchen with new stainless steel appliances (2018) and RARE family room addition (2014) complete with powder room and direct access to the private (new fence 2020) backyard, which leads to the new deck and interlocking patio (2018). On the second floor, you will find 3 bedrooms and a renovated 4pc bath, and hardwood floors. Other updates include AC/Furnace (2017) and main floor flooring (2018). 1 car private parking. Don't miss your opportunity to get into The Delta, book your showing now! (id:4236)
+<div class="container-wrapper">
+        <div class="container property-container">
+            <section class="quotes">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-uppercase">property detail</h2>
+                       
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p>Renovated, move-in ready home located in prime Delta West location. Walking distance to Gage Park, Schools, Ottawa St Shopping District, Restaurants, Coffee Shops, Escarpment Trails, and Transit. Quick drive to the Red Hill Valley Parkway and QEW. The main floor of this welcoming home features a light-filled open-concept living and dining room, renovated kitchen with new stainless steel appliances (2018) and RARE family room addition (2014) complete with powder room and direct access to the private (new fence 2020) backyard, which leads to the new deck and interlocking patio (2018). On the second floor, you will find 3 bedrooms and a renovated 4pc bath, and hardwood floors. Other updates include AC/Furnace (2017) and main floor flooring (2018). 1 car private parking. Don't miss your opportunity to get into The Delta, book your showing now! (id:4236)</p>
 
-This house/single family home located at 104 Kensington Avenue S, Hamilton is currently for sale and has been available on Zolo.ca for 1 day. This property is listed at $549,000 with an estimated mortgage of $2,021* per month. It has 3 beds, 2 bathrooms, and is 1,509 square feet. The property was built in 1923. 104 Kensington Avenue S, Hamilton is in the Delta West neighborhood Hamilton. Delta, Central and Delta East are nearby neighborhoods.</p>
-      <div class="row">
-        <div class="col-6 bg-light">
-          <form class="form">
-			<div class="form__entry">
-				<label class="form__entry-label" >Loan Amount</label>
-				<input type="text" class="form__entry-field" name="loanAmount" id="loanAmount" >
-			</div>
-			<div class="form__entry">
-				<label class="form__entry-label" >Interest Rate</label>
-				<input type="text" class="form__entry-field" name="interestRate" id="interestRate">
-			</div>
-			<div class="form__entry">
-				<label class="form__entry-label" >Term (Years)</label>
-				<input type="text" class="form__entry-field" name="termInYears" id="termInYears">
-			</div>
-			<div class="form__buttons">
-				<button class="btn" type="submit">Calculate</button>
-				<p class="form__error"></p>
-			</div>
-		</form>
-		<div class="results"></div>
-        </div>
-        <div class="col-6 bg-secondary">.col-6</div>
-      </div>
+<p>This house/single family home located at 104 Kensington Avenue S, Hamilton is currently for sale and has been available on Zolo.ca for 1 day. This property is listed at $549,000 with an estimated mortgage of $2,021* per month. It has 3 beds, 2 bathrooms, and is 1,509 square feet. The property was built in 1923. 104 Kensington Avenue S, Hamilton is in the Delta West neighborhood Hamilton. Delta, Central and Delta East are nearby neighborhoods.</p>
     </div>
-    <div class="col-4 bg-success">.col-4</div>
+                    <div class="col-12 col-md-6">
+                        <div class="contact-form">
+      <div class="<div class="col-md-7 ">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </div>
-</div>
-</* walk score api */
-<script>
-  var settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://walk-score.p.rapidapi.com/score?transit=transit%253D1&lon=43604830&lat=-79.693335&address=982%20ledbury%20cr%20mississauga&wsapikey=d15135f03020da084c71800a469b7e9b",
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "walk-score.p.rapidapi.com",
-		"x-rapidapi-key": "95398b2175mshd029e59dd548d14p1edd07jsn1d7fb5155400"
-	}
-}
+                    </div>
+                </div>
+            </section>
+            <!-- /.quotes -->
+        </div>
+    </div>
 
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
-</script>
 	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3E-VCJuseWNGJ7pHHy9ziYh4C2z_8pZc&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
