@@ -13,6 +13,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_CXAYu2DscQ8hqqaZRbslO");
+   })();
+   
+</script>
 </head>
 
 <!-- Navigation start Start -->
@@ -52,20 +61,17 @@
 	
 
 <!-- Container (About Section) -->
-<div class="container-fluid">
+<div class="container-fluid text-center">
   <div class="row">
-        <div class="col-sm-8">
-           <h2>About Us</h2><br>
+        <div class="col-12">
+           <h2>ABOUT US</h2><br>
              <h4>Welcomes to DreamHOME Real Estate Agent In Mississauga,Brampton, Ontario</h4><br>
                <p>Being a trusted real estate agent in Mississauga, Brampton, Ontario, I guarantee to provide effective, top-notch and reliable real estate property buying and selling the solution. I prefer to maintain a transparent relationship with my clients and make sure that all their questions are answered. It is obvious that the clients I deal with have a very fair idea about the real estate property, be it for buying or selling; therefore, I personally sit with them and help them understand everything in details. It is not only about buying a new property but even if you are planning to sell your existing property, you can contact me. I can assure the maximum selling price of the property.</p>
 		              <p>With the widespread network, I can help you buy any property that you wish for. Be it a commercial or a domestic property, you can completely rely on me for the best options. Considering the locations like availability of Supermarket, Public Transit, School, Hospitals nearby and many more.</p>
+                  
                   <br><button class="btn btn-default btn-lg">Get in Touch</button>
         </div>
-        <div class="col-sm-4">
-            <div class="d-none">
-              <img src="assets/images/company1.jpg" height="400" width="400">
-           </div>
-       </div>
+        
   </div>
 </div>
 
@@ -193,7 +199,7 @@
       <div class="row">
         <div class="contact-form">
       <div class="<div class="col-md-7 ">
-      <form action="/action_page.php">
+      <form onsubmit="return sendMail(this);" method="POST">
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
@@ -223,6 +229,6 @@
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3E-VCJuseWNGJ7pHHy9ziYh4C2z_8pZc&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
  <script src="assets/js/main.js"></script>
- 
+ <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
