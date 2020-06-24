@@ -1,8 +1,4 @@
-/* ----------------------------------------------- */
-/* monthly-payment calculator    */
-/* ----------------------------------------------- */
-
- /* Reset Styles */
+*/ Reset Styles */
 *, *::after, *::before { margin: 0; padding: 0; border: 0; line-height: inherit; color: inherit; text-transform: inherit; font-weight: inherit; font-style: inherit; font-size: inherit; font-family: inherit; background-color: transparent; outline: none; 
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-moz-box-sizing: border-box;
@@ -58,7 +54,7 @@ a:hover {}
 .headline--results { font-size: 1.25rem;}
 
 /* buttons */
-.btn, .btn:visited, .btn:active { text-decoration: none; display: inline-block; padding: 10px 20px; text-align: center; line-height: normal; background-color: black; color: #fff; }
+.btn, .btn:visited, .btn:active { text-decoration: none; display: inline-block; padding: 10px 20px; text-align: center; line-height: normal; background-color: green; color: #fff; }
 .btn:hover { text-decoration: underline; }
 
 /* Result Section */

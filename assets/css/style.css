@@ -280,6 +280,45 @@ input[type=submit]:hover {
   margin-top: 0;
 }
 
+/*--------------------------------------------listing page filter*/
+.filterDiv {
+  
+color: black;
+ text-align: center;
+   display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 20px 16px;
+  background-color: black;
+  cursor: pointer;
+  
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+
 /*--------------------------------------------Footer*/
 
 footer {
