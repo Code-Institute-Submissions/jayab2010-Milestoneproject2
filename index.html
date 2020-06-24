@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
-  <script src="https://kit.fontawesome.com/14dcacabb3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
@@ -43,8 +43,8 @@
                  <li><a href="listing.html">LISTING</a></li>
                    <li><a href="services.html">SERVICES</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
-		                 <li><a href="homelisting.html">REGISTER / LOGIN</a></li>
-         </ul>
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> 
+                    </ul>
      </div>
    </div>
 </nav>
@@ -191,37 +191,113 @@
   <div class="row">
     <div class="col-sm-5">
       <p> Contact us and we'll get back to you within 24 hours. </p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Boston MA</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1212121212</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> dreamhome.com</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Mississauga ON</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1234121282</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Dream_home.com</p>
     </div>
     <div class="col-sm-7">
       <div class="row">
         <div class="contact-form">
       <div class="<div class="col-md-7 ">
       <form onsubmit="return sendMail(this);" method="POST">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="fname">Full Name</label>
+        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+        
+        
         <label for="emailaddress">Email</label>
-        <input type="text" id="emailaddress" name="email" placeholder="Your email..">
+        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
         
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
+         <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+        
+        <button type="submit" class="btn center-block">SUBMIT</button>
       </form>
     </div>
   </div>
     </div>
   </div>
 </div>
-
+<br>
 <!-- Container (footer section) -->
-<footer class="container-fluid text-center ">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  
-</footer>
+<footer class="container-fluid bg-grey>
+ <div class="row">
+                <div class="col-12 col-sm-4">
+                    
+                    <ul class="social-links">
+                        <li><a target="_blank" href="#">Meet Our Team</a></li>
+                        <li><a target="_blank" href="#">Create An Account</a></li>
+                        <li><a target="_blank" href="#">Tips For Buyer</a></li>
+                        <li><a target="_blank" href="#">Tips For Seller</a></li>
+                        <li><a target="_blank" href="#">Commercial Resources</a></li>
+                       </ul>
+                        
+                    
+                </div>
+                <div class="c0l-12 col-sm-4">
+                  
+                    <ul class="social-links">
+                        <li><a target="_blank" href="#">Home</a></li>
+                        <li><a target="_blank" href="#">About Us</a></li>
+                        <li><a target="_blank" href="#">contact Us</a></li>
+                        <li><a target="_blank" href="#">Listing</a></li>
+                        <li><a target="_blank" href="#">Services</a></li>
+                       </ul>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <h5 class="uppercase">My Social</h5>
+                    <ul class="list-inline social-links">
+                        <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Container (sign up form) -->
+        <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container-fluid">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- Container (end sign up form) -->
+
 
 
 

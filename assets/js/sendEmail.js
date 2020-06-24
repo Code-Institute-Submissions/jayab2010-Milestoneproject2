@@ -2,7 +2,7 @@ function sendMail(contactForm) {
     emailjs.send("gmail", "dream_home", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
-        "information_request": contactForm.informationsummary.value
+        "project_request": contactForm.projectsummary.value
     })
     .then(
         function(response) {
