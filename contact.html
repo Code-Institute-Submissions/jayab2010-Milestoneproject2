@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-   <script type="text/javascript">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
    (function(){
       emailjs.init("user_CXAYu2DscQ8hqqaZRbslO");
    })();
@@ -55,12 +56,14 @@
   <div class="row">
     <div class="col-md-5">
     <div class="contact-map">
-      <iframe width="350" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJlx8AnhRHK4gRvH--ysQTC_U&key=AIzaSyD3E-VCJuseWNGJ7pHHy9ziYh4C2z_8pZc" allowfullscreen></iframe>
+      <iframe width="450" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJlx8AnhRHK4gRvH--ysQTC_U&key=AIzaSyD3E-VCJuseWNGJ7pHHy9ziYh4C2z_8pZc" allowfullscreen></iframe>
      
     </div>
     </div>
-    <div class="contact-form">
-      <div class="<div class="col-md-7">
+     <div class="col-sm-7">
+      <div class="row">
+        <div class="contact-form">
+      
       <form onsubmit="return sendMail(this);" method="POST">
         <label for="fname">Full Name</label>
         <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
@@ -69,14 +72,13 @@
         <label for="emailaddress">Email</label>
         <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
         
-        
         <label for="subject">Subject</label>
-         <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Write something.." style="height:170px" required></textarea>
+         <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
         
-        <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
-        
-        
+        <button type="submit" class="btn center-block">SUBMIT</button>
       </form>
+    </div>
+  
     </div>
   </div>
   </div>

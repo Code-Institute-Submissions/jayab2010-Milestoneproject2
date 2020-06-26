@@ -12,6 +12,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_CXAYu2DscQ8hqqaZRbslO");
+   })();
+   
+</script>
   
  </head>
  
@@ -53,27 +61,33 @@
 
 <p>This house/single family home located at 104 Kensington Avenue S, Hamilton is currently for sale and has been available on Zolo.ca for 1 day. This property is listed at $549,000 with an estimated mortgage of $2,021* per month. It has 3 beds, 2 bathrooms, and is 1,509 square feet. The property was built in 1923. 104 Kensington Avenue S, Hamilton is in the Delta West neighborhood Hamilton. Delta, Central and Delta East are nearby neighborhoods.</p>
     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="contact-form">
+<div class="col-12 col-md-6">
+      <div class="row">
+        <div class="contact-form">
       <div class="<div class="col-md-7 ">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <form onsubmit="return sendMail(this);" method="POST">
+        <label for="fname">Full Name</label>
+        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+        
+        
+        <label for="emailaddress">Email</label>
+        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
         
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
+         <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+        
+        <button type="submit" class="btn center-block">SUBMIT</button>
       </form>
     </div>
   </div>
-                    </div>
-                </div>
+    </div>
+  </div>
+    </div>
             </section>
             <!-- /.quotes -->
         </div>
     </div>
+
      <!-- /.calculator -->
     <div class="container">
        
@@ -145,9 +159,11 @@
 	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3E-VCJuseWNGJ7pHHy9ziYh4C2z_8pZc&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
- <script src="assets/js/main.js"></script>
+     <script src="assets/js/sendEmail.js"></script>
+
  <script src="assets/js/mortgage-calculators.js"></script>
  <script src="assets/js/monthly-mortgage-payment.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
