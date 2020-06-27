@@ -1,3 +1,4 @@
+// Monthly or bimonthly calculator
 
 (function($) {
      $.fn.calculateMortgage = function(options) {
@@ -57,3 +58,5 @@ $(function() {
 
 
 });
+
+// Affordability Calculator

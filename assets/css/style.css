@@ -182,7 +182,7 @@ div#map {
     
 
 .collapsible {
-  background-color: #777;
+  background-color: #be3b43;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -302,6 +302,7 @@ color: black;
   padding: 20px 16px;
   background-color: black;
   cursor: pointer;
+  color: white;
   
 }
 
@@ -382,7 +383,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: #f44336;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -459,10 +460,12 @@ hr {
      width: 100%;
   }
 }
+
+
 /* calculator 2*/
-label,
-div input,
-div select {
+ label,
+ div input,
+  div select {
   display: block;
   margin: 0.5em 0;
 }
