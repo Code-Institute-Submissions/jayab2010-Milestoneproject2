@@ -459,3 +459,18 @@ hr {
      width: 100%;
   }
 }
+/* calculator 2*/
+label,
+div input,
+div select {
+  display: block;
+  margin: 0.5em 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+form p {
+  margin: 0.5em 0;
+}
