@@ -33,11 +33,12 @@
         <li><a href="listing.html">lISTING</a></li>
         <li><a href="services.html">SERVICES</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
-		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+		<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button></li>
       </ul>
     </div>
   </div>
 </nav>
+<br>
 <h2>HOT PROPERTIES IN MISSISSAUga</h2>
 
 <div id="myBtnContainer">
@@ -72,7 +73,7 @@
     <div class="col-sm-4 col-lg-6 filterDiv condo">
      <div class="thumbnail">
      <a href="homelisting.html">
-         <img src="assets/images/properties3.jpg" alt="properties3" height="400" width="100">
+         <img src="assets/images/properties3.jpg" alt="properties3" height="400" width="100"></a>
         <p>$578,900</p>
        <p>2 bed • 2 bath • 1500-2000 sqft • 0-5 Years Old<p>
         <p>117 - 3170 Erin Mills Parkway Mississauga, Erin Mills</p>
@@ -81,7 +82,7 @@
     <div class="col-sm-4 col-lg-6 filterDiv home">
      <div class="thumbnail">
      <a href="homelisting.html">
-         <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="100">
+         <img src="assets/images/properties2.jpg" alt="properties2" height="400" width="100"></a>
         <p>$999,000</p>
        <p>1 bed • 1 bath • 500-599 sqft • 0-5 Years Old</p>
         <p>7014 Dunrobin Way Mississauga, Lisgar</p>
@@ -120,7 +121,7 @@
   
   
     <!-- Container (footer section) -->
-<footer class="container-fluid bg-grey>
+<footer class="container-fluid">
  <div class="row">
                 <div class="col-12 col-sm-4">
                     
@@ -154,7 +155,7 @@
                     </ul>
                 </div>
             </div>
-            
+</footer>
             <!-- Container (sign up form) -->
         <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -164,13 +165,13 @@
       <p>Please fill in this form to create an account.</p>
       <hr>
       <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <input type="text" id="email" placeholder="Enter Email" name="email" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
 
       <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="password" id="psw-repeat" placeholder="Repeat Password" name="psw-repeat" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me

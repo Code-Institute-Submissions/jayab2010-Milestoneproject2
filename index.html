@@ -41,8 +41,8 @@
                  <li><a href="listing.html">LISTING</a></li>
                    <li><a href="services.html">SERVICES</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
-                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> 
-                    </ul>
+                    <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+        </ul>
      </div>
    </div>
 </nav>
@@ -205,7 +205,7 @@
         <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
         
         <label for="subject">Subject</label>
-         <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+         <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Property Description" required></textarea>
         
         <button type="submit" class="btn center-block">SUBMIT</button>
       </form>
@@ -217,7 +217,7 @@
 </div>
 <br>
 <!-- Container (footer section) -->
-<footer class="container-fluid bg-grey>
+<footer class="container-fluid">
  <div class="row">
                 <div class="col-12 col-sm-4">
                     
@@ -262,13 +262,13 @@
       <p>Please fill in this form to create an account.</p>
       <hr>
       <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <input type="text" id="email" placeholder="Enter Email" name="email" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
 
       <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="password" id="psw-repeat" placeholder="Repeat Password" name="psw-repeat" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me

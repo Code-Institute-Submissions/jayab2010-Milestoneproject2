@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>properties</title>
@@ -31,7 +31,7 @@
         <li><a href="listing.html">LISTING</a></li>
         <li><a href="services.html">SERVICES</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
-		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+		<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button><li>
       </ul>
     </div>
   </div>
@@ -43,9 +43,9 @@
     <div class="col-12">
       <h2>AbOUT US</h2><br>
       <h4>Welcomes to DreamHome Real Estate Agent In Mississauga,Brampton, Ontario</h4><br>
-      <p>Being a trusted real estate agent in Mississauga, Brampton, Ontario, I guarantee to provide effective, top-notch and reliable real estate property buying and selling the solution.<span id="dots">...</span><span id="more">  I prefer to maintain a transparent relationship with my clients and make sure that all their questions are answered. It is obvious that the clients I deal with have a very fair idea about the real estate property, be it for buying or selling; therefore, I personally sit with them and help them understand everything in details.It is not only about buying a new property but even if you are planning to sell your existing property, you can contact me. I can assure the maximum selling price of the property.</p>
-		<p>With the widespread network, I can help you buy any property that you wish for. Be it a commercial or a domestic property, you can completely rely on me for the best options. Considering the locations like availability of Supermarket, Public Transit, School, Hospitals nearby and many more.</p>
-    </span></p>
+      <p>Being a trusted real estate agent in Mississauga, Brampton, Ontario, I guarantee to provide effective, top-notch and reliable real estate property buying and selling the solution. I prefer to maintain a transparent relationship with my clients and make sure that all their questions are answered. It is obvious that the clients I deal with have a very fair idea about the real estate property, be it for buying or selling; therefore, I personally sit with them and help them understand everything in details.It is not only about buying a new property but even if you are planning to sell your existing property, you can contact me. I can assure the maximum selling price of the property.<span id="dots">...</span><span id="more">
+		With the widespread network, I can help you buy any property that you wish for. Be it a commercial or a domestic property, you can completely rely on me for the best options. Considering the locations like availability of Supermarket, Public Transit, School, Hospitals nearby and many more.
+    </span><p>
 
       <br><button onclick="myFunction()" id="myBtn" class="btn btn-default btn-lg">Read more</button>
     </div>
@@ -91,7 +91,7 @@ You can also get a mortgage privately, from your parents for example, or anyone 
   </div>
 </div>
 <!-- Container (footer section) -->
-<footer class="container-fluid bg-grey>
+<footer class="container-fluid">
  <div class="row">
                 <div class="col-12 col-sm-4">
                     
@@ -125,7 +125,7 @@ You can also get a mortgage privately, from your parents for example, or anyone 
                     </ul>
                 </div>
             </div>
-            
+</footer>
 <!-- Container (sign up form) -->
         <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -135,13 +135,13 @@ You can also get a mortgage privately, from your parents for example, or anyone 
       <p>Please fill in this form to create an account.</p>
       <hr>
       <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <input type="text" id="email" placeholder="Enter Email" name="email" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
 
       <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="password" id="psw-repeat" placeholder="Repeat Password" name="psw-repeat" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
