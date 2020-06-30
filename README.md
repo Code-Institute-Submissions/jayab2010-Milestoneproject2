@@ -30,6 +30,7 @@ As an administrator, I want to receive email notification whenever the website v
 **Wireframes**
 
    Please find the attached wireframe below.
+   https://github.com/jayab2010/Milestoneproject2/blob/master/assets/images/wireframe.jpg
 
 
 ## Features
