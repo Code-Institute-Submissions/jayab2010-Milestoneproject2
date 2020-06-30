@@ -95,8 +95,9 @@ In this section, you should mention all of the languages, frameworks, libraries,
 ## Deployment
 
   The website was pushed to Github from REPL very often.  Once the final version of website was done. It is committed and pushed to Github.
-  the live version of the website is available at
-  https://jayab2010.github.io/Milestone-2-project/
+  the live version of the website is available at  https://jayab2010.github.io/Milestoneproject2/
+   
+ 
   
 
 
